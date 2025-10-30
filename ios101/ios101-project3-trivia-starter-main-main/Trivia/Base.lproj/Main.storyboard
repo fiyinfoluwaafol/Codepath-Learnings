@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hdU-Vt-9VE">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Trivia View Controller-->
+        <scene sceneID="l1k-G8-Dro">
+            <objects>
+                <viewController id="hdU-Vt-9VE" customClass="TriviaViewController" customModule="Trivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O5U-MJ-SBX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApD-AB-fe6">
+                                <rect key="frame" x="16" y="159.33333333333337" width="361" height="302"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="302" id="yIv-gU-yaA"/>
+                                    <constraint firstAttribute="width" constant="361" id="yj2-9H-pL6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question: 1/1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Luc-Fj-0rw">
+                                <rect key="frame" x="121.33333333333333" y="76" width="150.33333333333337" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1I0-AG-T4n">
+                                <rect key="frame" x="104.00000000000001" y="115.99999999999999" width="185.33333333333337" height="25.333333333333329"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cli-Ns-MPw">
+                                <rect key="frame" x="27.666666666666657" y="477.33333333333326" width="338" height="232"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVu-Wn-uXi">
+                                        <rect key="frame" x="0.0" y="0.0" width="338" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="TlV-74-nbk"/>
+                                            <constraint firstAttribute="width" constant="338" id="nQ9-3W-har"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Option 1" titleAlignment="center">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                            <color key="baseBackgroundColor" systemColor="systemGrayColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="option1IsTapped:" destination="hdU-Vt-9VE" eventType="touchUpInside" id="VEk-uW-e3X"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlJ-ZC-IZt">
+                                        <rect key="frame" x="0.0" y="60.000000000000057" width="338" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="JaI-8n-xhi"/>
+                                            <constraint firstAttribute="width" constant="338" id="gxa-Os-mwf"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Option 2" titleAlignment="center">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                            <color key="baseBackgroundColor" systemColor="systemGrayColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="option2IsTapped:" destination="hdU-Vt-9VE" eventType="touchUpInside" id="qei-UV-Aqp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Nm-B4-PC1">
+                                        <rect key="frame" x="0.0" y="120.00000000000006" width="338" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="Eje-wD-Int"/>
+                                            <constraint firstAttribute="width" constant="338" id="pts-dw-jqa"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Option 3" titleAlignment="center">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                            <color key="baseBackgroundColor" systemColor="systemGrayColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="option3IsTapped:" destination="hdU-Vt-9VE" eventType="touchUpInside" id="kWL-FH-AQD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SuK-QF-qnC">
+                                        <rect key="frame" x="0.0" y="180.00000000000006" width="338" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="THt-p1-CDk"/>
+                                            <constraint firstAttribute="width" constant="338" id="WXa-3W-oEy"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Option 4" titleAlignment="center">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                            <color key="baseBackgroundColor" systemColor="systemGrayColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="option4IsTapped:" destination="hdU-Vt-9VE" eventType="touchUpInside" id="gyh-Db-s6i"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dam-1b-wvQ"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="Luc-Fj-0rw" firstAttribute="top" secondItem="dam-1b-wvQ" secondAttribute="top" constant="17" id="CZE-0T-8Iu"/>
+                            <constraint firstItem="1I0-AG-T4n" firstAttribute="top" secondItem="Luc-Fj-0rw" secondAttribute="bottom" constant="10" id="Hd2-RB-vM5"/>
+                            <constraint firstItem="Luc-Fj-0rw" firstAttribute="centerX" secondItem="O5U-MJ-SBX" secondAttribute="centerX" id="KAo-Fl-sVv"/>
+                            <constraint firstItem="cli-Ns-MPw" firstAttribute="centerX" secondItem="O5U-MJ-SBX" secondAttribute="centerX" id="RjV-wt-AmE"/>
+                            <constraint firstItem="ApD-AB-fe6" firstAttribute="top" secondItem="1I0-AG-T4n" secondAttribute="bottom" constant="18" id="Vax-Ly-tHK"/>
+                            <constraint firstItem="1I0-AG-T4n" firstAttribute="centerX" secondItem="O5U-MJ-SBX" secondAttribute="centerX" id="l5w-JC-fei"/>
+                            <constraint firstItem="cli-Ns-MPw" firstAttribute="top" secondItem="ApD-AB-fe6" secondAttribute="bottom" constant="16" id="qG3-7O-eP9"/>
+                            <constraint firstItem="ApD-AB-fe6" firstAttribute="centerX" secondItem="O5U-MJ-SBX" secondAttribute="centerX" id="vKg-BL-U7q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currentQuestion" destination="ApD-AB-fe6" id="CiD-Vu-eaP"/>
+                        <outlet property="opt1" destination="dVu-Wn-uXi" id="CR9-7J-hl1"/>
+                        <outlet property="opt2" destination="rlJ-ZC-IZt" id="SBI-3w-PfX"/>
+                        <outlet property="opt3" destination="4Nm-B4-PC1" id="1cM-yi-AH2"/>
+                        <outlet property="opt4" destination="SuK-QF-qnC" id="w4E-1s-Wpe"/>
+                        <outlet property="questionCategory" destination="1I0-AG-T4n" id="0Hl-Bc-aFW"/>
+                        <outlet property="questionTracker" destination="Luc-Fj-0rw" id="beg-8C-jAn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JMp-T4-HIP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="84.732824427480907" y="-17.605633802816904"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
